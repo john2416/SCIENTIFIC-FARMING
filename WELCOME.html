@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>WELCOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="LOGIN1.css"> -!>
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+    <div class="clearfix" style="float:right;margin-right:80px;margin-top:80px;">
+      <button type="submit" class="cancelbtn" onclick="logout()" style="height:50px;width:90px;">Logout</button><br><br>
+    </div>
+
+    <script type="text/javascript">
+      function logout() {
+        window.location.href = 'HOME.html';
+      }
+    </script>
+
+    <!- ----------------------------------------------FORM1----------------------- -!>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content" action="SELECT.php" method="POST">
+        <div class="container">
+          <h1>WELCOME</h1><br><br>
+
+          <h3>To View entire record:</h3><br><br>
+
+          <label for="number"><b>UID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="number" placeholder="Enter UID" name="UID" required><br><br><br>
+
+          <label for="number"><b>Machine ID</b></label>
+          <input type="number" placeholder="Enter MID" name="eMID"><br><br><br>
+
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Fetch Details</button><br><br>
+          </div>
+
+        </div>
+      </form>
+
+
+
+      <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+
+
+      <!- ----------------------------------------------FORM2----------------------- -!>
+
+      <div id="id01" class="modal">
+
+        <form class="modal-content" action="DELETE.php" method="POST">
+          <div class="container">
+            <h3>To delete entire record:</h3><br><br>
+
+            <label for="number"><b>UID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" placeholder="Enter UID" name="UID" required><br><br><br>
+
+
+
+
+            <div class="clearfix">
+              <button type="submit" class="signupbtn">Delete Record</button>
+            </div>
+
+          </div>
+        </form>
+
+
+
+        <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+</body>
+
+</html>

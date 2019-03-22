@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>LOGIN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="LOGIN1.css"> -!>
+
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <!- NAVIGATION BAR -!>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+
+
+  <!- ----------------------------------------------FORM----------------------- -!>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content" action="LOGIN2.php" method="POST">
+      <div class="container">
+        <h1>LOGIN</h1>
+
+
+
+        <label for="text"><b>SID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="Enter SID" name="SID" required><br>
+
+        <label for="text"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="login2pwd" required><br>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label><br><br>
+
+        <p>By Logging In you agree to our <a href="https://en.wikipedia.org/wiki/Terms_of_service" style="color:dodgerblue"
+            target="_blank">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Login</button>
+        </div>
+
+      </div>
+    </form>
+
+
+
+    <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>

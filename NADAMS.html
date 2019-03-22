@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Farmer Portal : Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="HOME.css">
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <!- NAVIGATION BAR -!>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!- ----------------------------SIDEBAR----------------------- -!>
+  <div class="sidenav">
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp; &nbsp; &nbsp;Agriculture and Horticulture <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corner<br>
+      ---------------------------------------------------</p>
+
+
+    <button class="dropdown-btn">Risk Management
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="DROUGHT.html">Drought Management</a>
+      <a href="NADAMS.html">NADAMS</a>
+      <a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana</a>
+    </div>
+
+    <button class="dropdown-btn">Exports Imports
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="EXPORT.html">STATISTICS</a>
+    </div>
+
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp; View<br>--------------------------------------------------</p>
+
+    <a href="MAP1.html">Irrigated-Unirrigated Area</a>
+    <a href="MAP2.html">Agricultural Land</a>
+  </div>
+
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <div id="nadams">
+    <p>
+      National Agricultural Drought Assessment and Monitoring System (NADAMS), provides near real-time information on
+      prevalence, severity level and persistence of agricultural drought at state/ district/sub-district level. It
+      covers 14 states of India, which are predominantly agriculture based and prone to drought situation. Agricultural
+      conditions are monitored at state/district level using daily NOAA AVHRR data for 9 states. AWiFS (Advanced Wide
+      Field Sensor) of Resourcesat (56 m resolution) is used for detailed assessment of agricultural drought at
+      district and sub district level in five states.
+
+      Agricultural drought assessment is carried out with multiple indices/data as indicated below:
+
+      Normalized Difference Vegetation Index (NDVI) derived from NOAA AVHRR data (1km x 1km)
+      Normalized Difference Wetness Index (NDWI) derived from MODIS (250 m) data
+      Shortwave Angle Slope Index (SASI) derived from MODIS (500m) data
+      Soil Moisture Index (derived from soil water balance approach using daily PET & Rainfall values)
+      District-level Weekly Rainfall data from IMD– Rainfall Deviation, Number of dry weeks
+      Taluk/Mandal Level Monthly Rainfall data from State Agriculture Departments
+      Crop sown area collected from various states
+      District level Irrigations Statistics
+      For NADAMS Drought reports, <a href="http://ncfc.gov.in/nadams.html " style="color:brown;text-decoration: none;"
+        target="_blank"><i>click here</i></a>
+    </p>
+  </div>
+
+
+  </div>
+</body>
+
+</html>

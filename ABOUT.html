@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="ABOUT.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!- ----------------------------SIDEBAR----------------------- -!>
+  <div class="sidenav">
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp; &nbsp; &nbsp;Agriculture and Horticulture <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corner<br>
+      ---------------------------------------------------</p>
+
+    <button class="dropdown-btn">Risk Management
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="DROUGHT.html">Drought Management</a>
+      <a href="NADAMS.html">NADAMS</a>
+      <a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana</a>
+    </div>
+
+    <button class="dropdown-btn">Exports Imports
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="EXPORT.html">STATISTICS</a>
+    </div>
+
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp; View<br>--------------------------------------------------</p>
+
+    <a href="MAP1.html">Irrigated-Unirrigated Area</a>
+    <a href="MAP2.html">Agricultural Land</a>
+
+  </div>
+
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <!- -------------------------------------------About content----------------------------------------- -!>
+
+  <div id="about">
+    <h2 style="color:black;background-color: #90EE90 ;border:solid;border-radius:10px;margin-top:0px;"><i> &nbsp; About
+        Us</i></h2>
+
+    <img src="5.6._aaheader.png" alt="agri" height="200" width="900">
+
+    <p style="color:green">Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago.
+      Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which
+      is the mainstay of the villages. It contributes 16% of the overall GDP and accounts for employment of
+      approximately 52% of the Indian population. Rapid growth in agriculture is essential not only for self-reliance
+      but also to earn valuable foreign exchange.
+
+      Indian farmers are second to none in production and productivity despite of the fact that millions are marginal
+      and small farmers. They adopt improved agriculture technology as efficiently as farmers in developed countries.
+      It is felt that with provision of timely and adequate inputs such as fertilizers, seeds, pesticides and by making
+      available affordable agricultural credit /crop insurance, Indian farmers are going to ensure food and nutritional
+      security to the Nation.
+
+      It is envisaged to make available relevant information and services to the farming community and private sector
+      through the use of information and communication technologies, to supplement the existing delivery channels
+      provided for by the department. Farmers’ Portal is an endeavour in this direction to create one stop shop for
+      meeting all informational needs relating to Agriculture, Animal Husbandry and Fisheries sectors production,
+      sale/storage of an Indian farmer. With this Indian Farmer will not be required to sift through maze of websites
+      created for specific purposes.
+
+      Once in the Farmers’ Portal, a farmer will be able to get all relevant information on specific subjects around
+      his village/block /district or state. This information will be delivered in the form of text, SMS, email and
+      audio/video in the language he or she understands. These levels can be easily reached through the Map of India
+      placed on the Home page. Farmers will also be able to ask specific queries as well as give valuable feedback
+      through the Feedback module specially developed for the purpose.
+    </p>
+
+
+
+
+  </div>
+
+
+
+
+  <footer style="position: absolute;top:850px;background-color: black;width:100%;height:150px;">
+    
+    <i class="fa fa-map-marker" style="font-size:34px;color:antiquewhite;margin-left:20px;margin-top:30px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;SJCE<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;MYSORE </span> </i><br><br>
+    <i class="fa fa-phone" style="font-size:34px;color:antiquewhite;margin-left:20px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;+91 123 456 7899 </span></i><br><br>
+    <i class="fa fa-envelope" style="font-size:20px;color:antiquewhite;margin-left:20px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;sugan.guts@gmail.com </span></i>
+    <div style="text-align: center;margin-top:-90px; ">
+   <a href="HOME.html" style="color:antiquewhite;text-decoration-line: none;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="ABOUT.html" style="color:antiquewhite;text-decoration-line: none;">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="REGISTER.html" style="color:antiquewhite;text-decoration-line: none;">REGISTER</a><br>
+    <p style="color:antiquewhite">All Rights Reserved © 2018 &nbsp;| <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank" style="color:antiquewhite;text-decoration-line: none;">&nbsp;&nbsp;&nbsp;Privacy Policy</a> &nbsp;&nbsp;| <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" style="color:antiquewhite;text-decoration-line: none;">&nbsp;&nbsp;Terms of Service</a></p>
+  </div>
+  </footer>
+
+
+
+
+
+  </div>
+</body>
+
+</html>

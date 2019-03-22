@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>WELCOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="LOGIN1.css"> -!>
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <div class="clearfix" style="float:right;margin-right:80px;margin-top:80px;">
+      <button type="submit" class="cancelbtn" onclick="logout()" style="height:50px;width:90px;">Logout</button><br><br>
+    </div>
+
+    <script type="text/javascript">
+      function logout() {
+        window.location.href = 'HOME.html';
+      }
+    </script>
+
+    <!- ----------------------------------------------FORM1----------------------- -!>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content" action="SELECT2.php" method="POST">
+        <div class="container">
+          <h1>WELCOME</h1><br><br>
+
+          <h3>To View a Maintenance record:</h3><br><br>
+
+          <label for="number"><b>SID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="number" placeholder="Enter SID" name="SID" required><br><br><br>
+
+
+
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Fetch Details</button><br><br>
+          </div>
+
+        </div>
+      </form>
+
+
+
+      <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+      <!- ----------------------------------------------FORM2----------------------- -!>
+
+      <div id="id01" class="modal">
+
+        <form class="modal-content" action="DELETE2.php" method="POST">
+          <div class="container">
+            <h3>To delete a Maintenance record:</h3><br><br>
+
+            <label for="number"><b>SID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" placeholder="Enter SID" name="SID" required><br><br><br>
+
+
+
+
+            <div class="clearfix">
+              <button type="submit" class="signupbtn">Delete Record</button>
+            </div>
+
+          </div>
+        </form>
+
+
+
+        <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+</body>
+
+</html>

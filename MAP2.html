@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Farmer Portal : Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="HOME.css">
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <!- NAVIGATION BAR -!>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!- ----------------------------SIDEBAR----------------------- -!>
+  <div class="sidenav">
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp; &nbsp; &nbsp;Agriculture and Horticulture <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corner<br>
+      ---------------------------------------------------</p>
+
+    <button class="dropdown-btn">Risk Management
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="DROUGHT.html">Drought Management</a>
+      <a href="NADAMS.html">NADAMS</a>
+      <a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana</a>
+    </div>
+
+    <button class="dropdown-btn">Exports Imports
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="EXPORT.html">STATISTICS</a>
+    </div>
+
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp; View<br>--------------------------------------------------</p>
+
+    <a href="MAP1.html">Irrigated-Unirrigated Area</a>
+    <a href="MAP2.html">Agricultural Land</a>
+
+
+
+
+  </div>
+
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <div id="map2">
+    <img src="Screenshot_2018-10-24 https farmer gov in(1).png" alt="map2" height="700" width="700" style="border:solid;">
+  </div>
+
+
+
+  </div>
+</body>
+
+</html>

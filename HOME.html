@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Farmer Portal : Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="HOME.css">
+  <link rel="stylesheet" type="text/css" href="REGISTER.css">
+  <link rel="stylesheet" type="text/css" href="ABOUT.css">
+  <link rel="stylesheet" type="text/css" href="HOMESlideShow.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="startTime()">
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <!- NAVIGATION BAR -!>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!- ----------------------------SIDEBAR1----------------------- -!>
+  <div class="sidenav">
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp; &nbsp; &nbsp;Agriculture and Horticulture <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corner<br>
+      ---------------------------------------------------</p>
+
+    <button class="dropdown-btn">Risk Management
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="DROUGHT.html">Drought Management</a>
+      <a href="NADAMS.html">NADAMS</a>
+      <a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana</a>
+    </div>
+
+    <button class="dropdown-btn">Exports Imports
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="EXPORT.html">STATISTICS</a>
+    </div>
+
+    <p style="color:white;font-family:Arial">
+      ---------------------------------------------------
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web&nbsp;&nbsp; View<br>--------------------------------------------------</p>
+
+    <a href="MAP1.html">Irrigated-Unirrigated Area</a>
+    <a href="MAP2.html">Agricultural Land</a>
+
+  </div>
+
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+  <!- -----------------------------------------SLIDESHOW------------------------------------------------ -!>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="hi-tech-farming-723x334.jpg" style="width:600px;height:400px;">
+      <div class="text">SCIENTIFIC FARMING</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="CommercialFarming-1.jpg" style="width:600px;height:400px;">
+      <div class="text">SCIENTIFIC FARMING</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="thinkstockphotos-476743286_10.jpg" style="width:600px;height:400px;">
+      <div class="text">SCIENTIFIC FARMING</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div id="bullet" style="text-align:center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+  <!- -----------------------------------------END OF SLIDESHOW---------------------------------- -!>
+  <div id="homemap">
+    <img src="Screenshot_2018-10-24 Farmer Portal Home Page.png" alt="homemap" height="600" width="600" style="border:solid;">
+  </div>
+
+  <!- ----------------------------SIDEBAR2----------------------- -!>
+  <div class="sidenav1">
+    <a href="REGISTER.html">New User?<br>Register Here!</a>
+    <a href="https://pmfby.gov.in/" target="_blank">PMFBY</a>
+    <a href="DB.html" target="_blank">Data Entry Progress</a>
+    <a href="https://extensionreforms.dacnet.nic.in/" target="_blank">Extension Forms</a>
+    <a href="https://dackkms.gov.in/Account/Login.aspx" target="_blank">KKMS</a>
+    <a href="https://mkisan.gov.in/" target="_blank">mKisan</a>
+    <a href="https://rkvy.nic.in/reportmenu/reportnavigation.html" target="_blank">RKVY Projects</a>
+    <a href="SCIENTIST.html">For Crop Scientist Feedback<br>Click Here!</a>
+
+  </div>
+
+  <!- ----------------------------TIME----------------------- -!>
+        <div style="position:absolute;top:750px;left:20px;border:solid;border-color:black;height:80px;width:200px;">
+          <p id="txt" style="position:relative;left:22px;bottom:6px;font-size:30px;color:brown;"></p>
+        </div>
+        
+        <script>
+          function startTime() 
+          {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+          }
+          function checkTime(i) 
+          {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+          }
+        </script> 
+
+  <!- ------------------------------FOOTER-------------------------- -!>
+  <footer style="position: absolute;top:1300px;background-color: black;width:100%;height:150px;">
+    
+    <i class="fa fa-map-marker" style="font-size:34px;color:antiquewhite;margin-left:20px;margin-top:30px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;SJCE<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;MYSORE </span> </i><br><br>
+    <i class="fa fa-phone" style="font-size:34px;color:antiquewhite;margin-left:20px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;+91 123 456 7899 </span></i><br><br>
+    <i class="fa fa-envelope" style="font-size:20px;color:antiquewhite;margin-left:20px;line-height:0.29;"><span style="font-size:12px;" >&nbsp;&nbsp;sugan.guts@gmail.com </span></i>
+    <div style="text-align: center;margin-top:-90px; ">
+   <a href="HOME.html" style="color:antiquewhite;text-decoration-line: none;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="ABOUT.html" style="color:antiquewhite;text-decoration-line: none;">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="REGISTER.html" style="color:antiquewhite;text-decoration-line: none;">REGISTER</a><br>
+    <p style="color:antiquewhite">All Rights Reserved © 2018 &nbsp;| <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank" style="color:antiquewhite;text-decoration-line: none;">&nbsp;&nbsp;&nbsp;Privacy Policy</a> &nbsp;&nbsp;| <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" style="color:antiquewhite;text-decoration-line: none;">&nbsp;&nbsp;Terms of Service</a></p>
+  </div>
+  </footer>
+  <!- ------------------------------END OF FOOTER-------------------------- -!>
+  </div>
+</body>
+
+</html>

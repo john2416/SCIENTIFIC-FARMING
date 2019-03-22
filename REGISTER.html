@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+	<title>REGISTRATION</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="REGISTER.css">
+
+
+</head>
+
+<body>
+	<div id="body">
+		<a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+
+
+		<!- NAVIGATION BAR -!>
+
+		<ul>
+			<li><a href="HOME.html">Home</a></li>
+			<li><a href="ABOUT.html">About Us</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+				<div class="dropdown-content">
+					<a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+					<a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+				<div class="dropdown-content">
+					<a href="WHEAT.html">Wheat</a>
+					<a href="MAIZE.html">Maize</a>
+					<a href="RICE.html">Rice</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Login</a>
+				<div class="dropdown-content">
+					<a href="LOGIN1.html">Farmer Login</a>
+					<a href="LOGIN2.html">Crop Scientist Login</a>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+
+	<!- -------------FORM------------------------------------------------------------------------------------- -!>
+
+	<div id="id01" class="modal">
+
+		<form class="modal-content" action="test.php" method="POST">
+			<div class="container">
+				<h1>REGISTRATION</h1>
+
+				<p><b>Personal Details:</p>
+
+
+				<label for="text"><b>Applicant Name</b></label>
+				<input type="text" placeholder="Enter First Name" name="Fname" required>
+				<input type="text" placeholder="Enter Middle Name" name="Minit" required>
+				<input type="text" placeholder="Enter Last Name" name="Lname" required><br>
+
+				<label for="number"><b>AGE</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" placeholder="Enter Age" name="Age" required><br>
+
+				<label for="text"><b>Address</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" placeholder="Enter Address" name="Address" required><br>
+
+				<label for="text"><b>Cultivation Location</b></label>
+				<input type="text" placeholder="Enter City" name="Cultivation_location" required><br><br>
+
+				<!- --------------------------------WARESHOUSE    ----------------------------------------------------------------------------------- -!>
+				<hr>
+				<p><b>Warehouse Details:</p>
+				<label for="text"><b>Dimension</b></label>
+				<input type="text" placeholder="Eg.100x100sqft" name="Dimension" required><br>
+
+				<label for="text"><b>Location</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" placeholder="Enter City " name="Location" required><br>
+
+				<label for="text"><b>Storage Technique Used</b></label>
+				<select name="Storage_technique">
+					<option value="Drying Cribs">Drying Cribs</option>
+					<option value="Bag Storage">Bag Storage</option>
+					<option value="Drums">Drums</option>
+					<option value="Bamboo Box">Bamboo Box</option>
+					<option value="Calabashes">Calabashes</option>
+					<option value="Earthernware pots">Earthernware pots</option>
+				</select><br>
+
+				<label for="text"><b>Ownership Type</b></label>
+				<input type="radio" name="Ownership" value="Rented" checked> Rent
+				<input type="radio" name="Ownership" value="Self"> Self<br><br>
+
+				<hr>
+				<p><b>Machinery Details:</p><br>
+
+				<!- ------------------------------------------------MACHINE 1------------------------------------------  -!>
+				<label for="text"><b>Machine1</b></label>&nbsp;&nbsp;
+				<select name="Type1">
+					<option value="Caterpillar tractor">Caterpillar tractor</option>
+					<option value="Cultipacker">Cultipacker</option>
+					<option value="Seed drill">Seed drill</option>
+					<option value="Chisel Plow">Chisel Plow</option>
+					<option value="Trowel">Trowel</option>
+					<option value="Two wheel tractor">Two wheel tractor</option>
+					<option value="Roller">Roller</option>
+					<option value="Hydroponics">Hydroponics</option>
+					<option value="Farm truck">Farm truck</option>
+					<option value="Mower">Mower</option>
+					<option value="Round baler">Round baler</option>
+					<option value="Haulm topper">Haulm topper</option>
+					<option value="Swather">Swather</option>
+				</select><br>
+				<label for="text"><b>MachineID1</b></label>
+				<input type="text" placeholder="Enter MID1" name="MID1"> &nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Year of Purchase</b></label>
+				<select name="year1">
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Warranty Upto(Years)</b></label>
+				<select name="warranty1">
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<br>
+				<label for="text"><b>Status</b></label>
+				<input type="radio" name="Status1" value="Excellent" checked> Excellent
+				<input type="radio" name="Status1" value="Good"> Good
+				<input type="radio" name="Status1" value="Service Required"> Service Required
+				<input type="radio" name="Status1" value="Critical"> Critical<br><br><br><br>
+
+
+				<!- ------------------------------------------------MACHINE 2------------------------------------------  -!>
+
+				<label for="text"><b>Machine2</b></label>&nbsp;&nbsp;
+				<select name="Type2">
+					<option value="Caterpillar tractor">Caterpillar tractor</option>
+					<option value="Cultipacker">Cultipacker</option>
+					<option value="Seed drill">Seed drill</option>
+					<option value="Chisel Plow">Chisel Plow</option>
+					<option value="Trowel">Trowel</option>
+					<option value="Two wheel tractor">Two wheel tractor</option>
+					<option value="Roller">Roller</option>
+					<option value="Hydroponics">Hydroponics</option>
+					<option value="Farm truck">Farm truck</option>
+					<option value="Mower">Mower</option>
+					<option value="Round baler">Round baler</option>
+					<option value="Haulm topper">Haulm topper</option>
+					<option value="Swather">Swather</option>
+				</select><br>
+				<label for="text"><b>MachineID2</b></label>
+				<input type="text" placeholder="Enter MID2" name="MID2"> &nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Year of Purchase</b></label>
+				<select name="year2">
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select> &nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Warranty Upto(Years)</b></label>
+				<select name="warranty2">
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select> &nbsp;&nbsp;&nbsp;&nbsp;
+
+				<br>
+				<label for="text"><b>Status</b></label>
+				<input type="radio" name="Status2" value="Excellent" checked> Excellent
+				<input type="radio" name="Status2" value="Good"> Good
+				<input type="radio" name="Status2" value="Service Required"> Service Required
+				<input type="radio" name="Status2" value="Critical"> Critical<br><br><br><br>
+
+
+				<!- ------------------------------------------------MACHINE 3------------------------------------------  -!>
+
+
+				<label for="text"><b>Machine3</b></label>&nbsp;&nbsp;
+				<select name="Type3">
+					<option value="Caterpillar tractor">Caterpillar tractor</option>
+					<option value="Cultipacker">Cultipacker</option>
+					<option value="Seed drill">Seed drill</option>
+					<option value="Chisel Plow">Chisel Plow</option>
+					<option value="Trowel">Trowel</option>
+					<option value="Two wheel tractor">Two wheel tractor</option>
+					<option value="Roller">Roller</option>
+					<option value="Hydroponics">Hydroponics</option>
+					<option value="Farm truck">Farm truck</option>
+					<option value="Mower">Mower</option>
+					<option value="Round baler">Round baler</option>
+					<option value="Haulm topper">Haulm topper</option>
+					<option value="Swather">Swather</option>
+				</select><br>
+				<label for="text"><b>MachineID3</b></label>
+				<input type="text" placeholder="Enter MID3" name="MID3"> &nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Year of Purchase</b></label>
+				<select name="year3">
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select> &nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="text"><b>Warranty Upto(Years)</b></label>
+				<select name="warranty3">
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				<label for="text"><b>Status</b></label>
+				<input type="radio" name="Status3" value="Excellent" checked> Excellent
+				<input type="radio" name="Status3" value="Good"> Good
+				<input type="radio" name="Status3" value="Service Required"> Service Required
+				<input type="radio" name="Status3" value="Critical"> Critical<br>
+				<label for="text"><b>Insurance Scheme</b></label>
+				<select name="Insurance">
+					<option value="Pradhan Mantri Fasal Bima Yojana">PMFBY</option>
+					<option value="National Agriculture Insurance Scheme">NAIS</option>
+					<option value="Farm Income Insurance Scheme">FIIS</option>
+					<option value="Agriculture Insurance Co.">AIC</option>
+				</select> <br><br><br><br><br>
+
+				<!- ------------------------------------LAND--------------------------------------------------------------------------------------!>
+				<hr>
+				<p><b>Land Details:</p><br>
+
+				<label for="text"><b>Land Owner Name</b></label>
+				<input type="text" placeholder="Enter Owner Name" name="Owner_name" required><br>
+
+				<label for="number"><b>Land ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" placeholder="Enter PID" name="PID" required><br>
+
+				<label for="text"><b>Area of Land(sqft)</b></label>&nbsp;&nbsp;&nbsp;
+				<input type="text" placeholder="Eg.40000sqft" name="Area" required><br>
+
+				<label for="text"><b>Land Location</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" placeholder="Enter City" name="Land_location" required><br>
+
+				<label for="text"><b>Soil:</b></label><br>
+				<input type="radio" name="Condition1" value="Soil=Fertile" checked> Fertile
+				<input type="radio" name="Condition1" value="Soil=Sterile"> Sterile
+				<input type="radio" name="Condition1" value="Soil=semifertile"> Semi-Fertile<br><br>
+				<label for="text"><b>Pasture:</b></label><br>
+				<input type="radio" name="Condition2" value="Pasture=stable" checked> Stable
+				<input type="radio" name="Condition2" value="Pasture=unstable"> Unstable
+				<input type="radio" name="Condition2" value="Pasture=moist"> Moist
+				<input type="radio" name="Condition2" value="Pasture=moist*"> Moist*<br><br>
+
+				<label for="text"><b>Ownership Type:</b></label>
+				<input type="radio" name="Ownership_type" value="Self" checked> Self
+				<input type="radio" name="Ownership_type" value="Lease"> Lease<br><br>
+
+				<label for="text"><b>Land:</b></label><br>
+				<input type="radio" name="prev_stats1" value="Dry" checked> Dry
+				<input type="radio" name="prev_stats1" value="Moist"> Moist
+				<input type="radio" name="prev_stats1" value="Moist*"> Moist*<br><br>
+				<label for="text"><b>Cultivability:</b></label><br>
+				<input type="radio" name="prev_stats2" value="Cultivable" checked> Cultivable
+				<input type="radio" name="prev_stats2" value="not cultivable"> Not cultivable<br><br><br><br>
+
+				<!- ---------------------------------SECURITY------------------------------------------------------------- -!>
+				<hr>
+				<p><b>Security Details:</p><br>
+
+
+
+				<label for="number"><b>UID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" id="uid" placeholder="" name="UID" required><br><br>
+
+				<label for="psw"><b>Set Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="password" placeholder="Enter Password" name="register1pwd"><br>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="register1pwd-repeat"><br>
+
+				<label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label><br><br>
+
+				<p>By creating an account you agree to our <a href="https://en.wikipedia.org/wiki/Terms_of_service" style="color:dodgerblue"
+					 target="_blank">Terms & Privacy</a>.</p>
+
+				<div class="clearfix">
+					<button type="button" onclick="logout()" class="cancelbtn">Cancel</button>
+					<button type="submit" class="signupbtn">Register</button>
+				</div>
+
+			</div>
+		</form>
+
+	</div>
+
+	<!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+	<script type="text/javascript">
+		function logout() {
+			window.location.href = 'HOME.html';
+		}
+	</script>
+
+
+	<button onclick="myFunction()" style="position:absolute;top:2200px;left:750px;">Generate UID</button>
+
+	<script>
+		function myFunction() {
+
+			var x = Math.floor((Math.random() * 999999999) + 100000000);
+			document.getElementById("uid").value = x;
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>

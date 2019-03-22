@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+  <title>REGISTRATION</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="REGISTER2.css">
+
+
+</head>
+
+<body>
+  <div id="body">
+    <a href="HOME.html"><img src="title.png" alt="Logo" height="90px" width="510px"> </a>
+
+    <!- NAVIGATION BAR -!>
+
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="ABOUT.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Programmes & Schemes</a>
+        <div class="dropdown-content">
+          <a href="http://agricoop.nic.in/farmer-friendly-handbook" target="_blank">Farmer Friendly Handbook</a>
+          <a href="http://hortharyana.gov.in/en/beneficiary-list-farmers-groups" target="_blank">Benficiaries Report</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Major Crops</a>
+        <div class="dropdown-content">
+          <a href="WHEAT.html">Wheat</a>
+          <a href="MAIZE.html">Maize</a>
+          <a href="RICE.html">Rice</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Login</a>
+        <div class="dropdown-content">
+          <a href="LOGIN1.html">Farmer Login</a>
+          <a href="LOGIN2.html">Crop Scientist Login</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+
+
+
+
+  <!- ----------------------------------------------FORM----------------------- -!>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content" action="test2.php" method="POST">
+      <div class="container">
+        <h1>FEEDBACK</h1>
+
+
+
+        <label for="text"><b>Scientist Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="F_name" required>
+        <input type="text" placeholder="Enter Last Name" name="L_name" required><br>
+
+
+
+        <label for="number"><b>SID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" id="sid" placeholder="" name="SID" required><br><br>
+
+        <label for="number"><b>Machine ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder="Enter MID" name="eMID" required><br><br>
+
+        <label for="text"><b>Current Condition</b></label>&nbsp;&nbsp;
+        <input type="radio" name="Current_statistics" value="normal functioning" checked> Excellent
+        <input type="radio" name="Current_statistics" value="Good"> Good
+        <input type="radio" name="Current_statistics" value="Critical"> Critical<br><br><br><br>
+
+        <label for="text"><b>Modification</b></label>&nbsp;&nbsp;
+        <input type="radio" name="Modification" value="No service required" checked> Excellent
+        <input type="radio" name="Modification" value="oil change"> oil change
+        <input type="radio" name="Modification" value="service"> service
+        <input type="radio" name="Modification" value="service**"> service**<br><br><br><br>
+
+        <label for="text"><b>Feedback</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Feedback" value="1" checked> 1
+        <input type="radio" name="Feedback" value="2"> 2
+        <input type="radio" name="Feedback" value="3"> 3
+        <input type="radio" name="Feedback" value="4"> 4
+        <input type="radio" name="Feedback" value="5"> 5
+        <br><br><br><br>
+
+        <label for="number"><b>Investment</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder="Enter amount" name="Investment"><br><br>
+
+
+        <label for="psw"><b>Set Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" placeholder="Enter Password" name="register2pwd"><br>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="register2pwd-repeat"><br>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label><br><br>
+
+        <p>By creating an account you agree to our <a href="https://en.wikipedia.org/wiki/Terms_of_service" style="color:dodgerblue"
+            target="_blank">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="logout()" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Register</button>
+        </div>
+
+      </div>
+    </form>
+
+
+
+    <!- ---------------End of form---------------------------------------------------------------------------------------- -!>
+
+
+
+    <script type="text/javascript">
+      function logout() {
+        window.location.href = 'HOME.html';
+      }
+    </script>
+
+
+    <button onclick="myFunction()" style="position:absolute;top:300px;left:850px;width:100px;">Generate SID</button>
+
+    <script>
+      function myFunction() {
+
+        var x = Math.floor((Math.random() * 999) + 100);
+        document.getElementById("sid").value = x;
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
